@@ -1,0 +1,63 @@
+<h2>Accounts</h2> 
+<p #e *ngFor = "let e of accts" > User id: {{e.id}}<br>
+                                    The user's name: "{{e.name}}" <br> 
+                                     email: {{e.email}}<br> 
+                                     password: {{e.password}}
+</p>
+<br>
+
+
+<div class="row">
+    <div class="col-sm-4">
+        <label for="name">Name :</label>
+    
+    <input #n type="text" id="name" name="name" ><br>
+    
+    <label for="email">Email:</label>
+    
+    <input #e type="email" id="email" name="email" ><br>
+    
+    <label for="password">Password :</label>
+    
+    <input #p type="password" id="password" name="password" ><br>
+    
+    
+    <button (click) = createAccount(n.value,e.value,p.value)>Create account</button>
+    
+    
+    </div>
+
+    <div class="col-sm-4"><label for="text2">Enter user id to remove from database :</label><br>
+
+        <input #num type= "text" id="text2" name="text2" ><br>
+        <button (click) = removeAccount(num.value)>Remove account</button>
+    </div> 
+
+<p>Username is: {{user.name}}<br> Email is:{{user.email}}<br> Password is:{{user.password}}</p>
+
+<!-- <button (createName) = "showName()" >Show</button> -->
+
+<button (click)="sendNotification()">Notify my parent!</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+
+

@@ -1,0 +1,30 @@
+.col-sm-3{
+    margin-left: 38%;
+    text-align: left;
+    
+
+}
+
+.btn-continue{
+    padding: 0px 0px;
+    outline : none;
+    background-color: orange;
+    width: 280px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+ 
+
+}
+
+.btn-newaccount{
+    text-align: center;
+    padding: 0px 0px;
+    outline : none;
+    width: 345px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 38%;
+    
+
+}

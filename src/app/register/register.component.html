@@ -1,0 +1,54 @@
+<a routerLink ="" routerLinkActive="active">
+    <img [ngStyle] = "{'margin-left' : '45%' ,'width': '140px','height': '100px'}"  src="assets/img/hexalpitpc_logo.png">
+</a>
+
+<div class="row">
+
+    <div class="col-sm-3" [ngStyle] = "{'border': '1px solid lightgrey','border-radius': '5px'}">
+        
+        <form  >
+            <h3 [ngStyle] = "{'margin-left': '15px'}">Create Account</h3>
+            <label [ngStyle] = "{'margin-left': '15px'}" for="text">Your name</label><br>
+            <input   #n   [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="text" id="text" name="text">
+            <!-- <p>The account name is:  {{n.value}}</p> -->
+
+            <label [ngStyle] = "{'margin-left': '15px'}" for="email">Email</label><br>
+            <input  #em  [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="email" id="email" name="email">
+            <!-- <p>The email is: {{em.value}}</p> -->
+
+            <label [ngStyle] = "{'margin-left': '15px'}" for="password">Password</label><br>
+            <input  #pw   [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="password" id="password" name="password">
+            <!-- <p>The password is: {{pw.value}}</p> -->
+          
+
+            <label [ngStyle] = "{'margin-left': '15px'}" for="password">Re-enter password</label><br>
+            <input [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="password" id="password" name="password">
+
+            <button class = "btn-continue" (click) = "createAccount(n.value,em.value,pw.value)"  routerLink = "/sign-in" 
+            routerLinkActive="active"   >Create your account</button>
+            
+           
+            
+            <p [ngStyle] = "{'margin-left': '10px','margin-top' : '20px'}" > 
+                Already have an account?
+                <a [ngStyle] = "{'cursor': 'pointer'}" routerLink ="/sign-in" routerLinkActive = "active">Sign-in</a> 
+              
+            </p> 
+            
+           
+            
+        </form>
+        
+        
+    
+
+    </div>
+    
+
+
+</div>
+
+   
+
+
+<app-footer [ngStyle] = "{ 'position':'relative','top':'100px'}"></app-footer>

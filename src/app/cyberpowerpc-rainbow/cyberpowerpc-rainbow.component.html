@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<img class="col-sm-12"  [ngStyle] = "{'height': '300px'}" src="assets/img/summersalepic.png">
+<hr>
+<div class="row" >
+  <div class="col-sm-1" [ngStyle] = "{'margin-top': '100px','margin-left': '20px'}">
+    <button class="btn btn-default" 
+     *ngFor="let image of cyberpowerpc_Images; let i = index" 
+    (click)= "setImage(image,i)"
+    [ngClass]="[i == get_currentIndex() ? 'selected' : 'btn-default']" 
+    name="button" 
+    [ngStyle]  = "{'margin-top': '10px'}">
+        <img   [ngStyle] = "{'width': '50px','height': '60px'}" src ="{{image}}">
+    </button>
+    
+  </div>
+
+    <div class="col-sm-2" [ngStyle] = "{'margin-top': '100px'}">
+        <a ><img [ngStyle] = "{'width': '500px','height': '600px'}" src= "{{getImage()}}"></a> 
+        
+    </div>
+
+    <div class="col-sm-3" [ngStyle] = "{'margin-top': '80px','margin-left': '25%'}">
+      <h3 >CYBERPOWERPC Gamer Xtreme VR Gaming PC, Intel Core i5-9400F 2.9GHz, NVIDIA GeForce GTX 1660 Ti 6GB, 8GB DDR4, 120GB SSD, 1TB HDD, WiFi Ready & Win 10 Home (GXiVR8500A, Black)</h3>
+      <ul >
+        <li>System: Intel Core i5-9400F 2.9GHz 6-Core | Intel B360 Chipset | 8GB DDR4 | 120GB SSD | 1TB HDD | Genuine Windows 10 Home 64-bit</li>
+        <li>Graphics: NVIDIA GeForce GTX 1660 Ti 6GB Video Card | 1x HDMI | 1x DisplayPort</li>
+        <li>Connectivity: 6 x USB 3.1 | 2 x USB 2.0 | 1x RJ-45 Network Ethernet 10/100/1000 | </li>
+        <li>Audio: 7.1 Channel | Gaming Keyboard and Mouse 802.11AC Wi-Fi | RGB 7 Colors Gaming mouse
+          1 Year Parts & Labor | Free Lifetime Tech Support
+        </li>
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-sm-2" [ngStyle] = "{'margin-top': '200px','margin-left': '90px'}">
+      <button id = "btn_cart" [ngStyle] = "{'width': '150px','height': '30px', 'text-align': 'center'}" (click) = "goToSignIn()"  routerLinkActive="active"><p>Add to Cart</p></button>
+      
+  </div>
+
+  </div>
+
+  <p>this is the data: {{cart}}</p>

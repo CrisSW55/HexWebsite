@@ -1,0 +1,23 @@
+.col-sm-2{
+ 
+    margin-top: 200px;
+ 
+    
+}
+
+.btn-default{
+    padding: 0px 0px;
+    outline : none;
+
+}
+
+
+.selected{
+    
+    border-color: orange;
+   
+}
+#btn_cart{
+    background-color:  rgb(255, 196, 0);
+
+}

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jason James",
+      "email": "jason@gmail.com",
+      "password": "jason55"
+    },
+    
+    {
+      "id": 2,
+      "name": "Bill Jones",
+      "email": "bill@gmail.com",
+      "password": "bill55"
+    },
+    {
+      "id": 3,
+      "name": "Sue Williams",
+      "email": "suewilliams@gmail.com",
+      "password": "sue55"
+    },
+    {
+      "id": 4,
+      "name": "John Jones",
+      "email": "john@gmail.com",
+      "password": "john55"
+    },
+    {
+      "id": 5,
+      "name": "Abbey Greenaway",
+      "email": "greenaway@gmail.com",
+      "password": "green55"
+    },
+    {
+      "id": 6,
+      "name": "Gio ",
+      "email": "gio@gmail.com",
+      "password": "gio55"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "cartNum": 4
+    }
+  ]
+}

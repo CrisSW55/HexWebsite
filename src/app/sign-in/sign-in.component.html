@@ -1,0 +1,56 @@
+<a routerLink = "" routerLinkActive="active">
+
+    <img [ngStyle] = "{'margin-left' : '45%' ,'width': '140px','height': '100px'}"  src="assets/img/hexalpitpc_logo.png">
+
+
+</a>
+
+
+<div class="row">
+    <div class="col-sm-3" [ngStyle] = "{'border': '1px solid lightgrey','border-radius': '5px'}">
+        
+        <form  >
+            <h3 [ngStyle] = "{'margin-left': '15px'}">Sign-In</h3>
+            <!-- <p [ngStyle] = "{'margin-left': '15px'}">{{email}}</p> -->
+
+            <label  [ngStyle] = "{'margin-left': '15px'}" for="email">Email</label><br>
+            
+            <input #em (keyup) = "input_Email(em.value)"  [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="email" class = "form-control">
+            
+
+            <label [ngStyle] = "{'margin-left': '15px'}" for="password">Password</label><br>
+            <input #pw   (keyup) = "input_Password(pw.value)"  [ngStyle] = "{'margin-left': '10px','width': '280px'}" type="password" id="password" name="password">
+          
+            <button 
+                [disabled] = "!user_Exists(em.value,pw.value)"
+                class = "btn-continue"
+                (click) = "getCurrentAccountPage()"
+                routerLinkActive="active"  
+                
+            >Sign in
+            </button>
+            <p [ngStyle] = "{'margin-left': '10px','margin-top' : '20px'}" ><a href="#">Forgot your password?</a></p>
+        </form>
+
+
+        
+        
+        
+        
+<br>
+
+    </div>
+
+</div>
+
+
+    
+    <hr [ngStyle] = "{'margin-top' : '80px'}">
+   
+        <button  class = "btn-newaccount" routerLink ="/register" routerLinkActive="active" >Create new account</button>
+
+    
+   
+
+        
+<app-footer [ngStyle] = "{ 'position':'relative','top':'30px'}"></app-footer>

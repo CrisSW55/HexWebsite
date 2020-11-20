@@ -1,0 +1,50 @@
+<app-header></app-header>
+
+<img class="col-sm-12"  [ngStyle] = "{'height': '300px'}" src="assets/img/summersalepic.png">
+<hr>
+<div class="row" >
+  <div class="col-sm-1" [ngStyle] = "{'margin-top': '100px','margin-left': '20px'}">
+    <button class="btn btn-default" 
+     *ngFor="let image of ibuypowerpc_Images; let i = index" 
+    (click)= "setImage(image,i)"
+    [ngClass]="[i == get_currentIndex() ? 'selected' : 'btn-default']" 
+    name="button" 
+    [ngStyle]  = "{'margin-top': '10px'}">
+        <img   [ngStyle] = "{'width': '50px','height': '60px'}" src ="{{image}}">
+    </button>
+    
+  </div>
+
+    <div class="col-sm-2" [ngStyle] = "{'margin-top': '100px'}">
+        <a ><img [ngStyle] = "{'width': '500px','height': '600px'}" src= "{{getImage()}}"></a> 
+        
+    </div>
+    <div class="col-sm-3" [ngStyle] = "{'margin-top': '80px','margin-left': '25%'}">
+      <h3>iBUYPOWER Enthusiast Gaming PC Desktop AM010A AMD FX-6300 3.5Ghz, NVIDIA Geforce GT 710 1GB, 8GB DDR3 RAM, 1TB HDD, WiFi Adapter, Gaming Keyboard/Mouse & Win 10 Home</h3>
+      <ul>
+        <li>System: AMD FX-6300 6-Core 3. 5 GHz (4. 1 GHz Turbo) | 8GB DDR3 RAM | 1TB HDD | Genuine Windows 10 Home 64-bit</li>
+        <li>Graphics: NVIDIA GeForce GT 710 1GB Dedicated Graphics Card | Display Connectors - Dual Link DVI-D, HDMI, & VGA</li>
+        <li>Connectivity: 2 x USB 3. 0 | 2 x USB 2. 0 | 1x RJ-45 Network Ethernet 10/100/1000</li>
+        <li>Audio: 7. 1 Channel Keyboard and Mouse</li>
+        <li>Special Add Ons: 802. 11ac Wireless Wi-Fi</li>
+        <li>iBUYPOWER Gaming Keyboard & Mouse: 1 Year Parts & Labor + Free Lifetime Tech Support | Assembled in the U. S. A</li>
+        <li> *Optical Drive Not Included*</li>
+
+      </ul>
+    
+    </div>
+
+
+    <div class="col-sm-2" [ngStyle] = "{'margin-top': '200px','margin-left': '90px'}">
+        <button id = "btn_cart" [ngStyle] = "{'width': '150px','height': '30px', 'text-align': 'center'}" (click) = "goToSignIn()"  routerLinkActive="active" ><p>Add to Cart</p></button>
+        
+    </div>
+</div>
+
+
+  
+
+        
+    
+  
+

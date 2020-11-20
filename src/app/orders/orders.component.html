@@ -1,0 +1,88 @@
+<div class = "header" >
+    <div class="row" >
+        <div class="col-sm-2" [ngStyle] = "{'margin-top': '20px'}">
+            <a routerLink ="/accountpage/{{name}}" routerLinkActive="active"><img  [ngStyle] = "{'width': '200px','height': '130px','margin-left': '20px'}" src="assets/img/hexalpitpc_logo.png"></a> 
+        </div>
+
+        <div class="col-sm-6" [ngStyle] = "{'margin-top': '40px'}">
+            <form>
+                <div class="input-group" >
+                  <input  (keyup)="onKey($event)" type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-btn">
+                    <a routerLink = "{{getRouterLink()}}" routerLinkActive="active">
+                      <button 
+                      class="btn btn-default" 
+                      type="submit"
+                      >
+                      <i  class="glyphicon glyphicon-search"></i>
+                    </button>
+
+
+
+                    </a>
+                  </div>
+                </div>
+            </form>
+            <div  [ngStyle] = "{'margin-top': '20px'}">
+                <ul [ngStyle] = "{'list-style-type': 'none'}" >
+                  <li class="col-sm-4"><button class = "header_btns">Latest Deals!</button></li>
+                  <li class="col-sm-4"><button class = "header_btns">Build PC</button></li>
+                  <li class="col-sm-4"><button class = "header_btns">Contact</button></li>
+                 
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2"  [ngStyle] = "{'margin-left': '100px','margin-top': '35px'}">
+            <button class = "dropdown-toggle" role = "button">
+              Hello, <br>{{name}}
+              <span class = "caret"></span>
+              <div class="dropdown-content">
+                <button class="my_btn" 
+                        [ngStyle] = "{'font-size': '15px', 'font-weight': '550'}"
+                        routerLink = "/orders/{{name}}" routerLinkActive="active"
+                        >Your Orders
+                </button>
+                <button class="my_btn" 
+                        [ngStyle] = "{'font-size': '15px', 'font-weight': '550'}"
+                        routerLink = "/sign-in" routerLinkActive="active"
+                        >Sign Out
+                </button>
+              </div>
+            </button>
+
+        </div>
+
+        <div class="col-sm-1" [ngStyle] = "{'margin-top': '35px'}">
+          <a routerLink = "/shoppingcart/{{name}}" routerLinkActive="active" class="button fancy-button">
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" 
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+          </a>  
+        </div>
+
+
+    </div>
+    
+    
+</div>
+<div class="row">
+    <div class="col-sm-8" [ngStyle] = "{'margin-left':'10%'}">
+        <h1 >{{name}}, orders!</h1>
+        <p id= "boxOrders">These are your orders</p>
+    </div>
+
+
+
+  
+</div>
+
+
+
+<app-footer></app-footer>
+
+
+
+
