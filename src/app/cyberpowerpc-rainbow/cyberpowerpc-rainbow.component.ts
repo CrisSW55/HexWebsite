@@ -44,10 +44,12 @@ export class CyberpowerpcRainbowComponent implements OnInit {
 
   goToSignIn() {
     //Update Cart quantity
-    this.numOfProducts++;
-    this.headerService
-    .setCartNumber(this.numOfProducts)
-    .subscribe(num => this.cart.push(num));
+
+    // this.numOfProducts++;
+    // this.headerService
+    // .setCartNumber(this.numOfProducts)
+    // .subscribe(num => this.cart.push(num));
+
     // if(this.numOfProducts < 4){
     //   this.numOfProducts++;
     //   this.headerService.setCartNumber(this.numOfProducts);
