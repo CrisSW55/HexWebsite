@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { CyberpowerpcRainbowComponent } from './cyberpowerpc-rainbow/cyberpowerpc-rainbow.component';
 import { IbuypowerRedblackComponent } from './ibuypower-redblack/ibuypower-redblack.component';
@@ -27,7 +27,6 @@ import { HeaderService } from './header/header.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BodyComponent,
     FooterComponent,
     CyberpowerpcRainbowComponent,
     IbuypowerRedblackComponent,
