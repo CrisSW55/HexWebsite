@@ -1,2 +1,2 @@
 # HexWebsite
-#The project is found under the master branch!
+The project is found under the master branch!
